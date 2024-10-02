@@ -14,17 +14,18 @@ section {
 }
 
 section div {
-    width: 25%;
-    display: flex;
-    justify-content: center;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .btn {
   background-color: #3498db;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 20px 30px;
+  font-size: 2em;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -37,8 +38,8 @@ section div {
   background-color: #e74c3c;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 20px 30px;
+  font-size: 2em;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -49,8 +50,8 @@ section div {
 .border-btn {
   background-color: transparent;
   color: #2ecc71;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 20px 30px;
+  font-size: 2em;
   border: 2px solid #2ecc71;
   position: relative;
   transition: all 0.4s ease;
@@ -76,23 +77,23 @@ section div {
 .threeD-btn {
   background-color: #8e44ad;
   color: white;
-  padding: 12px 24px;
-  font-size: 16px;
+  padding: 22px 30px;
+  font-size: 2em;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 0 5px #6b3083;
+  box-shadow: 0 8px #6b3083;
 }
 .threeD-btn:active {
-  box-shadow: 0 2px #6b3083;
+  box-shadow: 0 3px #6b3083;
   transform: translateY(3px);
 }
 
 .gradient-btn {
   background: linear-gradient(45deg, #ff7e5f, #feb47b);
   color: white;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 20px 30px;
+  font-size: 2em;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -105,8 +106,8 @@ section div {
   background-color: transparent;
   color: #3498db;
   border: 2px solid #3498db;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 20px 30px;
+  font-size: 2em;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -118,9 +119,9 @@ section div {
 .ripple-btn {
   background-color: #3498db;
   color: white;
-  padding: 10px 20px;
+  padding: 20px 30px;
   border: none;
-  font-size: 16px;
+  font-size: 2em;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -153,14 +154,14 @@ section div {
 }
 
 .shadow-btn {
-  background-color: #2ecc71;
+  background-color: hsl(195, 96%, 74%);
   color: white;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 20px 30px;
+  font-size: 2em;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .shadow-btn:hover {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
