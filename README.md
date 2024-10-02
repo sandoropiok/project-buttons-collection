@@ -8,3 +8,8 @@ This project is a simple and customizable collection of different button styles 
 ## *Button light ribbon & glowing effect*
 
 ![Buttons collection](./assets/button-light-ribbon-ezgif.com-video-to-gif-converter.gif)
+
+
+## Second Buttons Collection
+
+![Second Buttons collection](./assets/buttons-second-collection-gif.gif)
