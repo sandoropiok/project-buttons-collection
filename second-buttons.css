@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+section div {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #2980b9;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.scale-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.scale-btn:hover {
+  transform: scale(1.1);
+}
+
+.border-btn {
+  background-color: transparent;
+  color: #2ecc71;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #2ecc71;
+  position: relative;
+  transition: all 0.4s ease;
+}
+.border-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2ecc71;
+  z-index: -1;
+  transition: all 0.4s ease;
+}
+.border-btn:hover::before {
+  width: 100%;
+}
+.border-btn:hover {
+  color: white;
+}
+
+.threeD-btn {
+  background-color: #8e44ad;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 5px #6b3083;
+}
+.threeD-btn:active {
+  box-shadow: 0 2px #6b3083;
+  transform: translateY(3px);
+}
+
+.gradient-btn {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.gradient-btn:hover {
+  filter: brightness(1.1);
+}
+
+.ghost-btn {
+  background-color: transparent;
+  color: #3498db;
+  border: 2px solid #3498db;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.ghost-btn:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.ripple-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  opacity: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  pointer-events: none;
+}
+
+.ripple-btn:active::after {
+  animation: ripple 0.6s linear;
+}
+
+@keyframes ripple {
+  to {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+  }
+}
+
+.shadow-btn {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.shadow-btn:hover {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
